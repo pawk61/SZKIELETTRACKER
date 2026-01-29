@@ -1,105 +1,219 @@
-[2026.01.29-12.08.25:941][743]LogConsoleManager: Display: Trying to Replace Cvar=r.Streaming.FramesForFullUpdate Set By Constructor Value implicitly by calling SetWithCurrentPriority or ReplaceCurrentPriorityAndTag.
-This is not allowed, possible solutions:
-1. Use SetWithCurrentPriority or ReplaceCurrentPriorityAndTag with explicit MinPriority and MaxPriority values, with MinPriority >= ECVF_SetByScalability.
-2. Use explicit Set, Cvar->Set(<Value>, <SetByPriority>)
-[2026.01.29-12.08.25:948][743]LogUIActionRouter: Display: Applying input config for leaf-most node [AthenaHUD_C_2147482645]
-[2026.01.29-12.08.25:948][743]LogUIActionRouter: Display: UIInputConfig being changed. bForceRefresh: 1, UserIndex: 0
-[2026.01.29-12.08.25:948][743]LogUIActionRouter: Display: 	InputMode: Previous (None), New (ECommonInputMode::Game)
-[2026.01.29-12.08.25:948][743]LogUIActionRouter: Display: [User 0] No focus target for leaf-most node [AthenaHUD_C_2147482645], and the widget isn't focusable - focusing the game viewport.
-[2026.01.29-12.08.25:958][743]LogFort: [AthenaPlayersLeftWidget_FinalCountdown] Destruct: Invoked
-[2026.01.29-12.08.25:973][744]LogBattleRoyaleGamePhaseLogic: UpdateGamePhaseStep. Phase = EAthenaGamePhase::Warmup. PhaseStep = EAthenaGamePhaseStep::None
-[2026.01.29-12.08.25:973][744]LogFortCosmeticsBudgetKeyEvents: [3957] CurrentBudgetMultiplierMode set to Increased (2.000)
-[2026.01.29-12.08.25:979][744]LogSparksCosmetics: [3f3f] Instrument Component not found.
-[2026.01.29-12.08.25:979][744]LogSparksCosmetics: [3f3f] Instrument Component not found.
-[2026.01.29-12.08.25:979][744]LogSparksCosmetics: [3f3f] Instrument Component not found.
-[2026.01.29-12.08.25:979][744]LogSparksCosmetics: [3f3f] Instrument Component not found.
-[2026.01.29-12.08.25:979][744]LogSparksCosmetics: [3f3f] Instrument Component not found.
-[2026.01.29-12.08.26:035][747]LogFortPlaylistUIExtensionLoader: Verbose: [3cb8] Using new code. loading all GFP UI extensions for widget ExtensionSlot_UnderVehicleHealth because playlist GFPs were already active
-[2026.01.29-12.08.26:035][747]LogFortPlaylistUIExtensionLoader: Verbose: [3cf8] Using new code. loading all GFP UI extensions for widget ExtensionSlot_UnderVehicleHealth
-[2026.01.29-12.08.26:036][747]LogFortPlaylistUIExtensionLoader: Verbose: [3cb8] Using new code. loading all GFP UI extensions for widget ExtensionSlot_HealthbarOverlay because playlist GFPs were already active
-[2026.01.29-12.08.26:036][747]LogFortPlaylistUIExtensionLoader: Verbose: [3cf8] Using new code. loading all GFP UI extensions for widget ExtensionSlot_HealthbarOverlay
-[2026.01.29-12.08.26:046][747]LogFortUI: Warning: WBP_BRGameUI_ExtensionSlot_UpperCenter_C_2147482645->OnExtensionWidgetCreated should have added the extension widget AccoladesWidget_C_2147482634 as a child
-[2026.01.29-12.08.26:065][747]LogTextChatVM: [348b] [0000016118069900] Starting to initialize PlayerVM - can use:1
-[2026.01.29-12.08.26:065][747]PIE: Warning: GetVectorParameterValue called on MPC_BRGameUI with invalid ParameterName 'None'. This is likely due to a Blueprint error.
-[2026.01.29-12.08.26:067][747]LogMovieScene: Initializing a legacy player for sequence 'Anim_PromptSpaceChange_INST'.
-[2026.01.29-12.08.26:072][747]LogTextChatVM: [3e6a] [00000160EC2A5380] Starting to initialize PlayerVM - can use:1
-[2026.01.29-12.08.26:072][747]LogTextChatVM: [3458] [00000160EC2A5380] Restriction:Unrestricted
-[2026.01.29-12.08.26:073][747]LogTextChatVM: [3458] [00000160EC2A5380] Restriction:Unrestricted
-[2026.01.29-12.08.26:073][747]LogDynamicUI: Warning: Tried to Remove a Scene that is not active: DUI_TextChatClickCatcherScene [FortLocalPlayer_2147482646]
-[2026.01.29-12.08.26:085][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceGoldCurrency.WidgetTree_2147482616.Text_ResourceCount.MID_M_Font_Resources_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_M_Font_Resources_23946. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:085][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceGoldCurrency.WidgetTree_2147482616.Text_ResourceCount.MID_MI_UI_Font_SoftShadow_SmallText_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_MI_UI_Font_SoftShadow_SmallText_23947. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:085][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceCash.WidgetTree_2147482616.Text_ResourceCount.MID_M_Font_Resources_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_M_Font_Resources_23948. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:085][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceCash.WidgetTree_2147482616.Text_ResourceCount.MID_MI_UI_Font_SoftShadow_SmallText_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_MI_UI_Font_SoftShadow_SmallText_23949. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:086][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceWood.WidgetTree_2147482616.Text_ResourceCount.MID_M_Font_Resources_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_M_Font_Resources_23950. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:086][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceWood.WidgetTree_2147482616.Text_ResourceCount.MID_MI_UI_Font_SoftShadow_SmallText_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_MI_UI_Font_SoftShadow_SmallText_23951. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:086][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceStone.WidgetTree_2147482616.Text_ResourceCount.MID_M_Font_Resources_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_M_Font_Resources_23952. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:086][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceStone.WidgetTree_2147482616.Text_ResourceCount.MID_MI_UI_Font_SoftShadow_SmallText_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_MI_UI_Font_SoftShadow_SmallText_23953. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:086][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceMetal.WidgetTree_2147482616.Text_ResourceCount.MID_M_Font_Resources_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_M_Font_Resources_23954. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:086][747]LogMaterial: Warning: MaterialInstanceDynamic /Engine/Transient.FortEngine_2147482646:FortGameInstance_2147482646.WBP_BRGameUI_PickupManager_C_2147482645.WidgetTree_2147482616.PackResourceMetal.WidgetTree_2147482616.Text_ResourceCount.MID_MI_UI_Font_SoftShadow_SmallText_2147482645 is not a valid parent for MaterialInstanceDynamic /Engine/Transient.MID_MID_MI_UI_Font_SoftShadow_SmallText_23955. Only Materials and MaterialInstanceConstants are valid parents for a material instance. Outer is /Engine/Transient
-[2026.01.29-12.08.26:089][747]LogFortTeamMemberUI: [3c60] Setting LocalPlayerInfo visibility to 1
-[2026.01.29-12.08.26:090][747]LogFortUI: [3d1d] Setting local player's Overlay_TeamMemberInfo visibility to -953385215
-[2026.01.29-12.08.26:101][748]LogFortHitches: HITCHHUNTER: Hitch in GameThread of 73.8 ms has been detected this frame. Number of Draw Calls this Frame: 832
-[2026.01.29-12.08.26:106][748]LogFortTrain: [353b] Dynamic tick state changed from <NONE> to Long Range Low (low detail: 1)
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49399, Priority=0, NewPriority=15, ContentHandle=(Id=0x1617CFB2120 DebugName='')
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49404, Priority=0, NewPriority=15, ContentHandle=(Id=0x1609E1D9380 DebugName='')
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49302, Priority=15, NewPriority=30, ContentHandle=(Id=0x160C1546770 DebugName='')
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49301, Priority=15, NewPriority=30, ContentHandle=(Id=0x160C1549170 DebugName='')
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49431, Priority=15, NewPriority=30, ContentHandle=(Id=0x1606EEA92F0 DebugName='')
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49592, Priority=0, NewPriority=-1, ContentHandle=(Id=0x160D58C2930 DebugName='')
-[2026.01.29-12.08.26:181][757]LogIoStoreOnDemand: Updating install request priority, SeqNo=49591, Priority=0, NewPriority=-1, ContentHandle=(Id=0x16181FC0E60 DebugName='')
-[2026.01.29-12.08.26:184][758]LogCosmeticParts: Warning: [3cc0] Incoming mesh component CharacterPartSkelMesh_ExtraPart_2147482633 is missing a customizable skeletal component. Will not merge meshes
-[2026.01.29-12.08.26:184][758]LogFortCosmetics: Error: AFortPlayerPawn mesh merge error
-[2026.01.29-12.08.26:410][798]LogEOSSDK: LogEOSPresence: Updating Presence to [Online]. LocalUserId=[99b...167] RichText=[]
-[2026.01.29-12.08.26:435][803]LogDynamicUI: Warning: Tried to Remove a Scene that is not active: UIScene_HoneyFiberLoafHill_PlayerReviveBanner [FortLocalPlayer_2147482646]
-[2026.01.29-12.08.26:480][811]LogCosmeticParts: Warning: [3cc0] Incoming mesh component CharacterPartSkelMesh_ExtraPart_2147482633 is missing a customizable skeletal component. Will not merge meshes
-[2026.01.29-12.08.26:480][811]LogFortCosmetics: Error: AFortPlayerPawn mesh merge error
-[2026.01.29-12.08.26:506][815]LogFortCosmeticBudgeting: Warning: [38d6] Does not have critical parts.  Has Body: false, Has Head: false, 0 budgeted parts, 0 unbudgeted parts.  Will replace budgeted parts with Default parts to guarantee critical parts exist.
-[2026.01.29-12.08.26:506][815]LogStaticMesh: [SM_Aura_GuitarPick] Mesh is marked for CPU read.
-[2026.01.29-12.08.26:526][817]LogFortCosmeticBudgeting: Warning: [38d6] Does not have critical parts.  Has Body: false, Has Head: false, 0 budgeted parts, 0 unbudgeted parts.  Will replace budgeted parts with Default parts to guarantee critical parts exist.
-[2026.01.29-12.08.26:533][817]LogFortDownloadManager: [3e57] - Asset already requested (/BRCosmetics/Athena/Heroes/Meshes/Bodies/CP_Athena_Body_F_QuicheLorraineMay.CP_Athena_Body_F_QuicheLorraineMay) but we already have type (EFortCustomPartType::Body) in flight
-[2026.01.29-12.08.26:533][817]LogFortDownloadManager: [3e57] - Asset already requested (/BRCosmetics/Characters/CharacterParts/FaceAccessories/CP_F_MED_QuicheLorraineLime_Bun_FaceAcc.CP_F_MED_QuicheLorraineLime_Bun_FaceAcc) but we already have type (EFortCustomPartType::Face) in flight
-[2026.01.29-12.08.26:533][817]LogFortDownloadManager: [3e57] - Asset already requested (/BRCosmetics/Characters/CharacterParts/Female/Medium/Heads/CP_Athena_Head_F_QuicheLorraineLime.CP_Athena_Head_F_QuicheLorraineLime) but we already have type (EFortCustomPartType::Head) in flight
-[2026.01.29-12.08.26:533][817]LogFortDownloadManager: [3e57] - Asset already requested (/Game/Characters/CharacterParts/Backpacks/NoBackpack.NoBackpack) but we already have type (EFortCustomPartType::Backpack) in flight
-[2026.01.29-12.08.26:541][818]LogFortCosmeticBudgeting: Warning: [38d6] Does not have critical parts.  Has Body: false, Has Head: false, 0 budgeted parts, 0 unbudgeted parts.  Will replace budgeted parts with Default parts to guarantee critical parts exist.
-[2026.01.29-12.08.26:685][837]LogCosmeticParts: Warning: [3cc0] Incoming mesh component CharacterPartSkelMesh_ExtraPart_2147482632 is missing a customizable skeletal component. Will not merge meshes
-[2026.01.29-12.08.26:685][837]LogFortCosmetics: Error: AFortPlayerPawn mesh merge error
-[2026.01.29-12.08.27:290][941]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:2
-[2026.01.29-12.08.27:527][982]LogIoStoreOnDemand: Writing 3.84 MiB to CAS block 39
-[2026.01.29-12.08.27:553][987]LogIoStoreOnDemand: Committed 155 CAS journal entries of total 3.63 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
-[2026.01.29-12.08.27:553][987]LogIoStoreOnDemand: Writing 1.19 MiB to CAS block 8
-[2026.01.29-12.08.27:570][990]LogIoStoreOnDemand: Committed 3 CAS journal entries of total 0.07 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
-[2026.01.29-12.08.27:627][998]LogIoStoreOnDemand: Updating install request priority, SeqNo=49399, Priority=15, NewPriority=30, ContentHandle=(Id=0x1617CFB2120 DebugName='')
-[2026.01.29-12.08.27:757][ 20]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:3
-[2026.01.29-12.08.28:745][199]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:4
-[2026.01.29-12.08.28:898][228]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:5
-[2026.01.29-12.08.29:126][271]LogIoStoreOnDemand: Updating install request priority, SeqNo=49362, Priority=0, NewPriority=15, ContentHandle=(Id=0x160D5937970 DebugName='')
-[2026.01.29-12.08.29:132][272]LogIoStoreOnDemand: Updating install request priority, SeqNo=49592, Priority=-1, NewPriority=0, ContentHandle=(Id=0x160D58C2930 DebugName='')
-[2026.01.29-12.08.29:132][272]LogIoStoreOnDemand: Updating install request priority, SeqNo=49591, Priority=-1, NewPriority=0, ContentHandle=(Id=0x16181FC0E60 DebugName='')
-[2026.01.29-12.08.29:132][272]LogIoStoreOnDemand: Updating install request priority, SeqNo=49781, Priority=-1, NewPriority=0, ContentHandle=(Id=0x160AE51F950 DebugName='')
-[2026.01.29-12.08.29:132][272]LogIoStoreOnDemand: Updating install request priority, SeqNo=49780, Priority=-1, NewPriority=0, ContentHandle=(Id=0x1609F3364D0 DebugName='')
-[2026.01.29-12.08.29:132][272]LogIoStoreOnDemand: Updating install request priority, SeqNo=49779, Priority=-1, NewPriority=0, ContentHandle=(Id=0x1609F3373A0 DebugName='')
-[2026.01.29-12.08.29:132][272]LogIoStoreOnDemand: Updating install request priority, SeqNo=49778, Priority=-1, NewPriority=0, ContentHandle=(Id=0x16098E22180 DebugName='')
-[2026.01.29-12.08.29:252][295]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:6
-[2026.01.29-12.08.29:364][316]LogIoStoreOnDemand: Writing 4.04 MiB to CAS block 8
-[2026.01.29-12.08.29:380][319]LogIoStoreOnDemand: Committed 188 CAS journal entries of total 4.41 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
-[2026.01.29-12.08.29:603][360]LogGfeSDK: 2026-01-29T13:08:29.603[D] TASK     CoreCallbacks.cpp:44   Request from server: IsClientAlive
-
-[2026.01.29-12.08.29:671][373]LogPawnBoombox: [3e38] Player 'PumpkinKnight83', song 'None'
-[2026.01.29-12.08.29:672][373]LogIoStoreOnDemand: Cancelling install request, ContentHandle=(Id=0x16098E22180 DebugName='')
-[2026.01.29-12.08.29:672][373]LogIoStoreOnDemand: Cancelling install request, ContentHandle=(Id=0x1609F3373A0 DebugName='')
-[2026.01.29-12.08.29:672][373]LogIoStoreOnDemand: Cancelling install request, ContentHandle=(Id=0x1609F3364D0 DebugName='')
-[2026.01.29-12.08.29:672][373]LogIoStoreOnDemand: Cancelling install request, ContentHandle=(Id=0x160AE51F950 DebugName='')
-[2026.01.29-12.08.29:672][373]LogIoStoreOnDemand: Updating install request priority, SeqNo=49591, Priority=0, NewPriority=-100, ContentHandle=(Id=0x16181FC0E60 DebugName='')
-[2026.01.29-12.08.29:672][373]LogIoStoreOnDemand: Updating install request priority, SeqNo=49592, Priority=0, NewPriority=-100, ContentHandle=(Id=0x160D58C2930 DebugName='')
-[2026.01.29-12.08.30:366][505]LogEntity: Warning: virtual verse::entity::AddEntities: 'SimulationEntity(0x00000160E6AC31C0)' is attempting to add the entity Simulation_player_2147482619(0x00000160E62C4A20) that is restricted and cannot be moved. Will be skipped.'
-[2026.01.29-12.08.30:366][505]LogAgent: Warning: agent subclasses cannot add entities to itself from user verse code.
-[2026.01.29-12.08.30:655][559]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:7
-[2026.01.29-12.08.30:968][613]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:8
-[2026.01.29-12.08.31:019][622]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:9
-[2026.01.29-12.08.31:146][645]LogEntity: Warning: virtual verse::entity::AddEntities: 'SimulationEntity(0x00000160E6AC31C0)' is attempting to add the entity Simulation_player_2147482618(0x000001617B7B7360) that is restricted and cannot be moved. Will be skipped.'
-[2026.01.29-12.08.31:146][645]LogAgent: Warning: agent subclasses cannot add entities to itself from user verse code.
-[2026.01.29-12.08.31:459][705]LogIoStoreOnDemand: Purging install cache, MaxCacheSize=1504.00 MiB, CacheSize=1501.58 MiB, ReferencedBlockSize=1501.58 MiB, ReferencedSize=210.11 MiB, FragmentedBytes=1295.30 MiB, UncachedSize=37.51 MiB
-[2026.01.29-12.08.31:459][705]LogIoStoreOnDemand: Display: Defrag found 66179744 fragmented bytes of 72487232 total bytes in 3 blocks.
-[2026.01.29-12.08.31:463][705]LogIoStoreOnDemand: Writing 0.33 MiB to CAS block 36
-[2026.01.29-12.08.31:497][709]LogIoStoreOnDemand: Committed 29 CAS journal entries of total 0.68 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
-[2026.01.29-12.08.31:498][709]LogIoStoreOnDemand: Deleting CAS block 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/blocks/0000002a.ucas'
+[2026.01.29-14.19.17:057][671]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:8
+[2026.01.29-14.19.17:068][672]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:7
+[2026.01.29-14.19.17:081][672]LogFort: Changing QueuedBatch.TimeoutWarningInterval from 0 to 0
+[2026.01.29-14.19.17:082][672]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.17:082][672]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.17:082][672]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.17:082][672]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.17:082][672]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.17:120][677]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:8
+[2026.01.29-14.19.17:160][681]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:9
+[2026.01.29-14.19.17:367][713]LogSparksCosmetics: Warning: [3d45] Default variant is missing a Main mesh? Sparks_Mic_Generic 
+[2026.01.29-14.19.17:367][713]LogSparksCosmetics: Warning: [3d9c] Default variant is missing a Left Hand mesh? Sparks_Mic_Generic 
+[2026.01.29-14.19.17:367][713]LogSparksCosmetics: Warning: [3d45] Default variant is missing a Main mesh? Sparks_Mic_Generic 
+[2026.01.29-14.19.17:368][713]LogSparksCosmetics: Warning: [3f07] Missing Material Instance.
+[2026.01.29-14.19.17:368][713]LogSparksCosmetics: Warning: [3d45] Default variant is missing a Main mesh? Sparks_Mic_Generic 
+[2026.01.29-14.19.17:368][713]LogSparksCosmetics: Warning: [3d9c] Default variant is missing a Left Hand mesh? Sparks_Mic_Generic 
+[2026.01.29-14.19.17:368][713]LogSparksCosmetics: Warning: [3d9c] Default variant is missing a Left Hand mesh? Sparks_Mic_Generic 
+[2026.01.29-14.19.17:368][713]LogSparksCosmetics: Warning: [3f07] Missing Material Instance.
+[2026.01.29-14.19.17:562][744]LogFort: AFortGameStateAthena::CheckAndAddMissedPlayerStatesToMaps(): Added missed player state to team and squad map, with UniqueId: MCP:2726a...4b3ed, in team: 22 and squad: 20.
+[2026.01.29-14.19.18:014][817]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:10
+[2026.01.29-14.19.18:597][927]LogIoStoreOnDemand: Writing 4.04 MiB to CAS block 43
+[2026.01.29-14.19.18:612][930]LogIoStoreOnDemand: Committed 116 CAS journal entries of total 2.72 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
+[2026.01.29-14.19.18:686][944]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:11
+[2026.01.29-14.19.18:914][989]LogEntity: Warning: virtual verse::entity::AddEntities: 'SimulationEntity(0x00000160EBDC2CE0)' is attempting to add the entity Simulation_player_2147482591(0x00000160DD6088A0) that is restricted and cannot be moved. Will be skipped.'
+[2026.01.29-14.19.18:914][989]LogAgent: Warning: agent subclasses cannot add entities to itself from user verse code.
+[2026.01.29-14.19.19:375][ 79]LogPawnBoombox: [3e38] Player ' Шаман13', song 'None'
+[2026.01.29-14.19.20:166][235]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:12
+[2026.01.29-14.19.20:177][236]LogFort: Warning: [1a2f] Couldn't find name for surface type. Returning default name: SurfaceType_Default
+[2026.01.29-14.19.20:179][236]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:179][236]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:179][236]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:179][236]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:179][236]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:179][236]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:186][237]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:186][237]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.20:626][322]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:11
+[2026.01.29-14.19.21:317][459]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:10
+[2026.01.29-14.19.21:452][486]LogIoStoreOnDemand: Writing 4.07 MiB to CAS block 43
+[2026.01.29-14.19.21:467][489]LogIoStoreOnDemand: Committed 191 CAS journal entries of total 4.48 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
+[2026.01.29-14.19.21:895][571]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.21:895][571]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.21:895][571]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.21:895][571]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.21:895][571]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.21:974][585]LogCosmeticParts: [3ddc] Merging meshes for incoming part CP_Shoes_AloofAtomPuddle and target part CP_Body_Commando_F_GraffitiAssassin
+[2026.01.29-14.19.21:974][585]LogMutable: Started Update Skeletal Mesh Async. CustomizableObject=CO_Shoe_Release_34_20_A Instance=CustomizableObjectInstance_2147482630, Frame=1779550
+[2026.01.29-14.19.22:123][615]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:9
+[2026.01.29-14.19.22:886][767]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:8
+[2026.01.29-14.19.23:961][979]LogIoStoreOnDemand: Writing 4.37 MiB to CAS block 43
+[2026.01.29-14.19.23:973][981]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:7
+[2026.01.29-14.19.23:990][984]LogIoStoreOnDemand: Committed 233 CAS journal entries of total 5.46 KiB to 'C:/Users/pawk6/AppData/Local/FortniteGame/Saved/PersistentDownloadDir/IoStore/InstallCache/cas.jrn'
+[2026.01.29-14.19.24:126][ 12]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:8
+[2026.01.29-14.19.25:022][172]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:9
+[2026.01.29-14.19.25:350][233]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:8
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogFort: [3e25]  - bIsActive: 1
+[2026.01.29-14.19.26:212][392]LogAppBackgroundUtils: AppBackgroundUtils: Updated Active State to True
+[2026.01.29-14.19.26:465][439]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:7
+[2026.01.29-14.19.27:249][595]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:6
+[2026.01.29-14.19.27:682][681]LogAthenaHUDMenu: VeryVerbose: [3d03] (ToggleEmotePicker) cursor mode enabled? 1
+[2026.01.29-14.19.27:689][682]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:7
+[2026.01.29-14.19.27:738][690]LogMovieScene: Initializing a legacy player for sequence 'Anim_PromptSpaceChange_INST'.
+[2026.01.29-14.19.27:746][690]LogEmoteWheelVM: Scaling gc.TimeBetweenPurgingPendingKillObjects from 61 to 61.
+[2026.01.29-14.19.27:749][690]Model View Viewmodel: Error: The source 'EmoteWheelItemSelectionVM_SelectedCategory' was evaluated to be invalid at initialization. WBP_EmotePicker_Screen_C_2147482644
+[2026.01.29-14.19.27:749][690]Model View Viewmodel: Error: The source 'EmoteWheelItemSelectionVM_SelectedCategory' is invalid and could not initialize the bindings. WBP_EmotePicker_Screen_C_2147482644
+[2026.01.29-14.19.27:765][690]LogUIActionRouter: Display: Applying input config for leaf-most node [WBP_EmotePicker_Screen_C_2147482644]
+[2026.01.29-14.19.27:765][690]LogUIActionRouter: Display: UIInputConfig being changed. bForceRefresh: 0, UserIndex: 0
+[2026.01.29-14.19.27:765][690]LogUIActionRouter: Display: 	InputMode: Previous (ECommonInputMode::Game), New (ECommonInputMode::All)
+[2026.01.29-14.19.27:765][690]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringRightMouseDown
+[2026.01.29-14.19.27:765][690]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2026.01.29-14.19.27:765][690]LogViewport: Display: Player bShowMouseCursor Changed, False -> True
+[2026.01.29-14.19.27:766][690]LogUIActionRouter: Display: [User 0] Focused desired target WBP_Emote_RadialWheel
+[2026.01.29-14.19.28:205][776]LogFortCosmetics: [04cb]  - [MRSZKIELET2010PL] attempting to play emote [EID_Thrash]
+[2026.01.29-14.19.28:206][776]LogUIActionRouter: Display: Applying input config for leaf-most node [AthenaHUD_C_2147482644]
+[2026.01.29-14.19.28:206][776]LogUIActionRouter: Display: UIInputConfig being changed. bForceRefresh: 0, UserIndex: 0
+[2026.01.29-14.19.28:206][776]LogUIActionRouter: Display: 	InputMode: Previous (ECommonInputMode::All), New (ECommonInputMode::Game)
+[2026.01.29-14.19.28:206][776]LogViewport: Display: Viewport MouseCaptureMode Changed, CaptureDuringRightMouseDown -> CapturePermanently
+[2026.01.29-14.19.28:206][776]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2026.01.29-14.19.28:206][776]LogViewport: Display: Player bShowMouseCursor Changed, True -> False
+[2026.01.29-14.19.28:206][776]LogUIActionRouter: Display: [User 0] Leaf-most node [AthenaHUD_C_2147482644] did not set focus through desired methods, but the currently focused widget is acceptable. Doing nothing, but this widget should be updated.
+[2026.01.29-14.19.28:211][776]LogMovieSceneECS: Warning: Unable to resolve property 'Nudge' from 'ScaleBoxSlot' instance 'ScaleBoxSlot_0'
+[2026.01.29-14.19.28:211][776]LogMovieScene: Warning: Unable to resolve property 'Nudge' from 'ScaleBoxSlot' instance 'ScaleBoxSlot_0'
+[2026.01.29-14.19.28:214][776]LogAthenaHUDMenu: VeryVerbose: [3d03] (None) cursor mode enabled? 0
+[2026.01.29-14.19.28:214][776]LogEmoteWheelVM: Scaling gc.TimeBetweenPurgingPendingKillObjects from 61 to 61.
+[2026.01.29-14.19.28:215][776]LogUIActionRouter: Didn't apply input config for leaf-most node of root node [WBP_EmotePicker_Screen_C_2147482644] because it's not the active action domain node
+[2026.01.29-14.19.28:425][817]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:8
+[2026.01.29-14.19.28:428][817]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.28:428][817]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.28:428][817]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.28:428][817]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.28:428][817]LogSparksCosmetics: [3f3f] Instrument Component not found.
+[2026.01.29-14.19.29:060][941]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:9
+[2026.01.29-14.19.29:197][969]LogFortAudioAnalysis: [3deb] Fortnite_AudioAnalysis_Music registering w/ context [None] refs:10
+[2026.01.29-14.19.29:199][969]LogFortAudioAnalysis: [3e3c] Fortnite_AudioAnalysis_Music unregistering w/ context [None] refs:9
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogFort: [3e25]  - bIsActive: 0
+[2026.01.29-14.19.29:502][ 29]LogAppBackgroundUtils: AppBackgroundUtils: Updated Active State to False
+[2026.01.29-14.19.29:755][ 72]LogWorldMarker: Placed [Local] 259:Location(2)

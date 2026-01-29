@@ -24,10 +24,10 @@ def save_history(history):
         json.dump(history, f, indent=4, ensure_ascii=False)
 
 def start_tracker():
-    print(f"--- FORTNITE PHASE TRACKER (Warmup Edition) ---")
+    print(f"---- SZKIELETTRACKER----")
     
     if not os.path.exists(log_path):
-        print("BŁĄD: Nie znaleziono pliku logów!")
+        print("ERROR: NO LOG FILE ")
         return
 
     history = load_history()
@@ -35,7 +35,7 @@ def start_tracker():
     current_game_players = set()
     in_warmup = False
 
-    print(f"🚀 Gotowy. Czekam na fazę 'Warmup' (Gra {game_counter})...")
+    print(f"🚀 WAITING FOR WARMUP LOG (Gra {game_counter})...")
 
     with open(log_path, 'rb') as f:
         f.seek(0, 2)
@@ -61,7 +61,7 @@ def start_tracker():
 
                     in_warmup = True
                     current_game_players = set() 
-                    print(f"\n🏝️  [FAZA WARMUP] Start Gry {game_counter}")
+                    print(f"\n🏝️  [WARMUP PHASE] {game_counter}")
 
                 # 2. ZLICZANIE GRACZY (Tylko gdy in_warmup jest True!)
                 if in_warmup and "LogPawnBoombox" in row and "song 'None'" in row:
@@ -77,20 +77,20 @@ def start_tracker():
                 if "LogFort: Display: Plugin" in row and "is skipped" in row:
                     if in_warmup:
                         if len(current_game_players) >= 3:
-                            game_key = f"Gra {game_counter}"
+                            game_key = f"Game {game_counter}"
                             history[game_key] = sorted(list(current_game_players))
                             save_history(history)
-                            print(f"\n💾 ZAPISANO: {game_key} ({len(current_game_players)} graczy)")
+                            print(f"\n💾 Saved: {game_key} ({len(current_game_players)} Players)")
                             game_counter += 1
                         
                         in_warmup = False
                         current_game_players = set()
-                        print(f"⌛ Mecz zakończony. Czekam na nową fazę Setup -> Warmup...")
+                        print(f"⌛ MECZ ENDER, WAITING FOR NEW MATCH...")
 
         except KeyboardInterrupt:
             if current_game_players:
                 save_history(history)
-            print("\n--- Tracker wyłączony ---")
+            print("\n----SZKIELETTRACKER STOPPED----")
 
 if __name__ == "__main__":
     start_tracker()

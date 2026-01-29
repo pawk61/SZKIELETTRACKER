@@ -5,12 +5,12 @@ import time
 log_path = os.path.expandvars(r'%LOCALAPPDATA%\FortniteGame\Saved\Logs\FortniteGame.log')
 
 def start_logger():
-    print("--- LOGGER FAZ WYSPY STARTOWEJ ---")
-    print(f"Monitoruję plik: {log_path}")
-    print("Czekam na komunikaty 'LogBattleRoyaleGamePhaseLogic'...\n")
+    print("----WARMUP LOGGER----")
+    print(f"MONITORING: {log_path}")
+    print("WAITING FOR LOG 'LogBattleRoyaleGamePhaseLogic'...\n")
 
     if not os.path.exists(log_path):
-        print("BŁĄD: Nie znaleziono pliku logów!")
+        print("ERROR: NO LOG FILE FOUND")
         return
 
     # Otwieramy plik w trybie binarnym z podglądem na koniec
@@ -30,12 +30,12 @@ def start_logger():
                 # Szukamy Twojej frazy (bez względu na wielkość liter)
                 if "LogBattleRoyaleGamePhaseLogic" in row:
                     print("-" * 50)
-                    print(f"🔔 WYKRYTO KOMUNIKAT:")
+                    print(f"🔔 FOUND LOG")
                     print(row) # Wyświetla całą treść linii z loga
                     print("-" * 50)
 
         except KeyboardInterrupt:
-            print("\n--- Logger zatrzymany ---")
+            print("\n----LOGGER STOPPED----")
 
 if __name__ == "__main__":
     start_logger()

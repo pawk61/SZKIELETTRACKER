@@ -6,14 +6,14 @@ db_path = "historia_gier.json"
 
 def analyze_players():
     if not os.path.exists(db_path):
-        print("BŁĄD: Nie znaleziono pliku historia_gier.json!")
+        print("CANNOT FIND JSON FILE")
         return
 
     with open(db_path, 'r', encoding='utf-8') as f:
         try:
             data = json.load(f)
         except json.JSONDecodeError:
-            print("BŁĄD: Plik JSON jest uszkodzony lub pusty.")
+            print("ERROR : JSON IS CORRUPTED OR MISSING")
             return
 
     # Słownik: gracz -> lista gier, w których był
@@ -30,21 +30,20 @@ def analyze_players():
 
     # --- NAGŁÓWEK RAPORTU ---
     print("\n" + "="*70)
-    print(f"📊 PEŁNY RAPORT BAZY DANYCH")
-    print(f"Liczba zapisanych meczów: {len(data)}")
-    print(f"ŁĄCZNA LICZBA UNIKALNYCH GRACZY: {len(all_unique_players)}")
+    print(f"📊 ")
+    print(f"SAVED MATCHES: {len(data)}")
+    print(f"UNIQUE PLAYERS: {len(all_unique_players)}")
     print("="*70)
 
-    # --- POWTÓRKI ---
-    print(f"--- ANALIZA POWTÓREK ---")
+   
     
     if not duplicates:
-        print("Nie znaleziono żadnych powtarzających się graczy.")
+        print("NO DUPLICATES FOUND")
     else:
         # Sortujemy od największej liczby wystąpień
         sorted_duplicates = sorted(duplicates.items(), key=lambda x: len(x[1]), reverse=True)
 
-        print(f"{'GRACZ':<25} | {'SPOTKANIA':<10} | {'W GRACH'}")
+        print(f"{'PLAYER':<25} | {'MET':<10} | {'IN GAMES'}")
         print("-" * 70)
 
         for name, games in sorted_duplicates:
@@ -52,7 +51,7 @@ def analyze_players():
             print(f"{name:<25} | {len(games):<10} | {games_str}")
 
         print("-" * 70)
-        print(f"Znaleziono {len(duplicates)} osób spotkanych więcej niż raz.")
+        print(f"FOUND {len(duplicates)} PEOPLE MET MORE THAN ONCE.")
     
     print("="*70 + "\n")
 

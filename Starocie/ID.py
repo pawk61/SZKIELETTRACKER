@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "33d0ca22-d9533891-149061be-7b029919"
+API_KEY = "########################"
 HEADERS = {"Authorization": API_KEY}
 
 def pobierz_id_gracza(nick):

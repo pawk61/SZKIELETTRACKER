@@ -33,7 +33,6 @@ RANK_HIERARCHY = {
 class SzkieletTrackerFinal(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.last_player_time = time.time()
         self.title("SZKIELET TRACKER PRO V10.0")
         self.geometry("1200x850")
         ctk.set_appearance_mode("dark")
@@ -51,7 +50,7 @@ class SzkieletTrackerFinal(ctk.CTk):
         threading.Thread(target=self.queue_worker, daemon=True).start()
         
         self.setup_ui()
-        
+        threading.Thread(target=self.simulate_on_start, daemon=True).start()
 
     def get_rank_color(self, ranga):
         r = str(ranga).lower()
@@ -116,7 +115,7 @@ class SzkieletTrackerFinal(ctk.CTk):
         
         search_header = ctk.CTkFrame(self.sidebar, fg_color="transparent")
         search_header.pack(pady=(10, 0), padx=20, fill="x")
-        ctk.CTkLabel(search_header, text=":", font=("Segoe UI", 12, "bold"), text_color="#aaaaaa").pack(side="left")
+        ctk.CTkLabel(search_header, text="🔍 PODGLĄD:", font=("Segoe UI", 12, "bold"), text_color="#aaaaaa").pack(side="left")
         self.search_error_lbl = ctk.CTkLabel(search_header, text="", font=("Segoe UI", 10), text_color="#ff4b4b")
         self.search_error_lbl.pack(side="right")
 
@@ -303,7 +302,6 @@ class SzkieletTrackerFinal(ctk.CTk):
         self.lbl_success.configure(text=f"✅ POBRANE: {self.success_count}")
 
     def queue_worker(self):
-        
         while True:
             try:
                 # Pobieramy nick z kolejki
@@ -318,7 +316,7 @@ class SzkieletTrackerFinal(ctk.CTk):
             except queue.Empty:
                 # Jeśli kolejka jest pusta przez sekundę, a mamy już dużą grupę graczy
                 if self.total_scanned >= 20 and "Skanowanie" in self.status_text.cget("text"):
-                    self.after(0, lambda: self.set_status("Tymczasowo zakończono skanowanie", "#2ecc71"))
+                    self.after(0, lambda: self.set_status("Zakończono skanowanie lobby", "#2ecc71"))
                 continue
             
             time.sleep(0.05) 
@@ -352,7 +350,6 @@ class SzkieletTrackerFinal(ctk.CTk):
 
     def start_tracking(self):
         self.btn_start.configure(state="disabled", text="⚡ TRACKING AKTYWNY")
-        self.set_status("Oczekiwanie na grę...", "#888888") # TO DODAŁEM
         threading.Thread(target=self.engine, daemon=True).start()
 
     def engine(self):
@@ -387,7 +384,6 @@ class SzkieletTrackerFinal(ctk.CTk):
                         if name and name not in self.BOSS_BLACKLIST and name not in known_nicks:
                             known_nicks.add(name)
                             self.player_queue.put(name)
-                            self.last_player_time = time.time() # Resetujemy stoper przy każdym nowym graczu
 
 if __name__ == "__main__":
     app = SzkieletTrackerFinal()

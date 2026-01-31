@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "c372c472-eefb-46aa-ab69-d4739690c0f8"
+API_KEY = "#######################"
 NICK = "Dmytro_159"
 
 # Jedna linia na zapytanie i wyciągnięcie ID

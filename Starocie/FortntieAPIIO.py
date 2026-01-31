@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = "33d0ca22-d9533891-149061be-7b029919"
+API_KEY = "##########################"
 NICK = "Dmytro_159" # Wpisz swój nick
 
 def pobierz_wszystko_z_api_io(nick):

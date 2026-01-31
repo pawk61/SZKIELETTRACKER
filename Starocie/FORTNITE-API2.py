@@ -1,7 +1,7 @@
 import requests
 
 # Twój klucz API wklejony bezpośrednio w nagłówek
-API_KEY = "c372c472-eefb-46aa-ab69-d4739690c0f8"
+API_KEY = "###########################"
 
 def sprawdz_staty_gracza(nick):
     url = "https://fortnite-api.com/v2/stats/br/v2"
@@ -36,5 +36,5 @@ def sprawdz_staty_gracza(nick):
 
 # Możesz tutaj wpisać dowolny nick do sprawdzenia
 if __name__ == "__main__":
-    moj_nick = "Dmytro_159"
+    moj_nick = "wajerzz grind"
     sprawdz_staty_gracza(moj_nick)

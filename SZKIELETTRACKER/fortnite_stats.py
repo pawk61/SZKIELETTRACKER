@@ -1,6 +1,9 @@
 import requests
+import dotenv
+import os
 
-API_KEY = "c372c472-eefb-46aa-ab69-d4739690c0f8"
+dotenv.load_dotenv(dotenv_path="api.env")
+API_KEY = os.getenv("FORTNITE_API_KEY")
 
 def sprawdz_staty_gracza(nick):
     url = "https://fortnite-api.com/v2/stats/br/v2"
